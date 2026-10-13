@@ -74,6 +74,8 @@ Future<void> scheduleAll(Map timings, SharedPreferences sp) async {
         ),
       ),
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+      iLocalNotificationDateInterpretation:
+          UILocalNotificationDateInterpretation.absoluteTime,
       matchDateTimeComponents:
           weekly ? DateTimeComponents.dayOfWeekAndTime : DateTimeComponents.time,
     );
